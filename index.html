@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Landing Section -->
+    <section id="home" class="section">
+        <div class="home-content">
+            <!-- Image on the left -->
+            <div class="photo">
+                <img src="Images\archu.png" alt="Your Photo">
+            </div>
+            <!-- Intro text on the right -->
+            <div class="intro">
+                <h1>Hi, I'm <span class="name">Archana S</span></h1>
+                <h2>Creative Developer <span class="name">& Designer</span></h2>
+                <button class="btn" onclick="scrollToSection('about')">Learn More</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="about-content">
+            <!-- Left Side: About Me -->
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    I'm a passionate developer with a flair for design. I create websites that are visually stunning and highly interactive. Let's make something amazing together! I have experience in web development, creating full-stack applications, and designing user interfaces that are both functional and beautiful.
+                </p>
+            </div>
+
+            <!-- Right Side: Achievements (Certificates) -->
+            <div class="achievements">
+                <h2>My Certificates</h2>
+                <div class="certificate-circle">
+                    <img src="Images\cert1.png" alt="Web Developer Exposys Data Labs" class="certificate" onclick="showCertificateDetails('cert1-details')">
+                    <img src="Images\cert2.png" alt="Build an Azure AI Vision Solution" class="certificate" onclick="showCertificateDetails('cert2-details')">
+                    <img src="Images\cert3.png" alt="Create an Intelligence document processing solution with Azure AI Document Intelligence" class="certificate" onclick="showCertificateDetails('cert3-details')">
+                    <img src="Images\cert4.png" alt="Data Annotator Samsung Seed Labs" class="certificate" onclick="showCertificateDetails('cert4-details')">
+                </div>
+                <!-- Certificate Details -->
+                 <br><br>
+                <div id="cert1-details" class="certificate-details">Web Developer Exposys Data Labs</div>
+                <div id="cert2-details" class="certificate-details">Build an Azure AI Vision Solution</div>
+                <div id="cert3-details" class="certificate-details">Create an Intelligence document processing solution with Azure AI Document Intelligence</div>
+                <div id="cert4-details" class="certificate-details">Data Annotator Samsung Seed Labs</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <br>
+        <div class="projects-container">
+            <!-- Left Project -->
+            <div class="project-card" id="project1" >
+                <div class="project-image">
+                    <img src="Images\project1.jpg" alt="Project 1 Image">
+                </div>
+                <div class="project-details" id="project1-details">
+                    <h3>Doctor's Space</h3>
+                    <p>Doctor's Space is a desktop application built using Python, MySQL, and Tkinter. 
+                    It provides a user-friendly interface for doctors to register their details 
+                    (such as contact information and specialty) and helps users search for doctors based on 
+                    location and specialty.</p>
+                </div>
+            </div>
+    
+            <!-- Right Project -->
+            <div class="project-card" id="project2" >
+                <div class="project-image">
+                    <img src="Images\project2.png" alt="Project 2 Image">
+                </div>
+                <div class="project-details" id="project2-details">
+                    <h3>AS Institutions (Web development Project)</h3>
+                    <p>The website provides previous year cut-off PDFs for various engineering courses 
+                    under exams like KCET and ComedK. It also features an enquiry block where users can 
+                    submit queries, which are sent to AS institutions via email, and users receive responses 
+                    through their provided email.</p>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <br><br>
+        
+        <div class="skills-container">
+            <!-- Python -->
+            <div class="skill-item">
+                <img src="Images\python.jpeg" alt="Python Icon">
+                <span class="skill-name">Python</span>
+            </div>
+    
+            <!-- SQL -->
+            <div class="skill-item">
+                <img src="Images\sql.png" alt="SQL Icon">
+                <span class="skill-name">SQL</span>
+            </div>
+    
+            <!-- Django -->
+            <div class="skill-item">
+                <img src="Images\django.png" alt="Django Icon">
+                <span class="skill-name">Django</span>
+            </div>
+    
+            <!-- Java -->
+            <div class="skill-item">
+                <img src="Images\java.png" alt="Java Icon">
+                <span class="skill-name">Java</span>
+            </div>
+    
+            <!-- C -->
+            <div class="skill-item">
+                <img src="Images\c.png" alt="C Icon">
+                <span class="skill-name">C</span>
+            </div>
+    
+            <!-- HTML -->
+            <div class="skill-item">
+                <img src="Images\html.png" alt="HTML Icon">
+                <span class="skill-name">HTML</span>
+            </div>
+    
+            <!-- CSS -->
+            <div class="skill-item">
+                <img src="Images\css.jpeg" alt="CSS Icon">
+                <span class="skill-name">CSS</span>
+            </div>
+    
+            <!-- JavaScript -->
+            <div class="skill-item">
+                <img src="Images\js.png" alt="JavaScript Icon">
+                <span class="skill-name">JavaScript</span>
+            </div>
+    
+            <!-- MS Office -->
+            <div class="skill-item">
+                <img src="Images\ms.jpeg" alt="MS Office Icon">
+                <span class="skill-name">MS Office</span>
+            </div>
+            <br><br><br><br><br>
+            <!-- Database Management -->
+            <div class="skill-item">
+                <img src="Images\dbms.png" alt="Database Management Icon">
+                <span class="skill-name">Database Management</span>
+            </div>
+    
+            <!-- Data Structures -->
+            <div class="skill-item">
+                <img src="Images\data structures.png" alt="Data Structures Icon">
+                <span class="skill-name">Data Structures</span>
+            </div>
+        </div>
+        <br>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        
+        <div class="contact-links">
+            <!-- LinkedIn -->
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/archanas14" target="_blank">
+                    <img src="Images\linkedin.png" alt="LinkedIn Icon">
+                    <span>Connect on LinkedIn</span>
+                </a>
+            </div>
+            
+            <!-- Email -->
+            <div class="contact-item">
+                <a href="mailto:archanas0314@gmail.com">
+                    <img src="Images\email.png" alt="Email Icon">
+                    <span>Send an Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>By Archana S</p>
+    </footer>
+</body>
+</html>
